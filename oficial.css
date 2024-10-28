@@ -1,0 +1,244 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 1080;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    background-color: #03012E;
+}
+
+.poppins-regular {
+    font-weight: 400;
+}
+
+
+
+.azul {
+    width: 15rem;
+    height: 5rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+header {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.menu-normal,
+.menu-responsivo {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+
+.botaoMenu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #03012E;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+    transform: scale(0);
+}
+
+.menu-mobile ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 1rem;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+}
+
+.bemvindo h2 {
+    font-size: 1.9rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 0rem;
+    padding-top: 5rem;
+    animation-duration: 2s;
+    animation-name: go-top;
+}
+
+.agencia {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+.agencia h1 {
+    margin: 0;
+    animation-duration: 2s;
+    animation-name: go-top;
+}
+
+@keyframes go-top {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(300);
+    }
+}
+
+.fogueteefeito {
+    width: 20%;
+    height: auto;
+    padding-top: 0;
+    animation-delay: 2s;
+    animation: go-top 3s ;
+    animation-iteration-count: 2;
+}
+
+
+.grid {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 4rem auto;
+}
+
+.container {
+    background-color: #00AAFA;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+}
+
+.img-container {
+    width: 70%;
+    height: auto;
+}
+footer{
+    width: 95vw;
+    height: 2rem;
+}
+.botao-container {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #4E08C5;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 2rem;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+}
+
+.botao-container:hover {
+    box-shadow: 0 0 0 4px #00AAFA, 0 0 0 8px #4E08C5;
+}
+.video{
+    text-align: center;
+}
+.quem-somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.quem-somos h2{
+    color: #00AAFA;
+    font-size: 20px;
+    width: 180%;
+    padding-top: 5rem;
+    text-align: left;
+    
+}
+.quem-somos strong{
+    color: aliceblue;
+}
+
+.titulo{
+    padding-left: 12rem;
+    padding-top: 5rem;
+    color: white;
+    
+}
+
+@media screen and (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+
+    .botaoMenu {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    .fogueteefeito {
+        width: 60%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .azul {
+        width: 10rem;
+        height: 3rem;
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
